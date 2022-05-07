@@ -1,0 +1,141 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <html lang="en">
+    <title>Psyched Skins</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="sophias_website.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="nav" class="main-nav">
+            <ul>
+                <li>
+                    <a href="home">home</a>
+                </li>
+                <li>
+                    <a href="store">store</a>
+                </li>
+                <li>
+                    <a href="about">about</a>
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <h1 class="website-name website-name-large">Psyched Skins</h1>
+    </header>
+    <!--this is how you write links-->
+    <a href="./index.html">link to something in the future</a>
+    <a href="./aboutme.html">second link that is not finished</a>
+
+
+    <div>
+
+
+        <h1>
+            Welcome to psyched skins, where you can find all of your scent needs! <input type="button" value="pay here" />
+        </h1>
+
+        <br>
+        <section class="content-section container">
+            <h2 class="section-header">
+                About
+            </h2>
+            <br>
+
+            <script>
+                //plain js, needs to be put in a script tag on html doc
+
+                var i = 0; //start point
+                var images = [];
+                var time = 3000;
+
+                // Image List 
+
+                images[0] = 'DSC_0071.JPG';
+                images[1] = 'DSC_0073.JPG';
+                images[2] = 'DSC_0074.JPG';
+                images[3] = 'DSC_0075.JPG';
+                images[4] = 'DSC_0077.JPG';
+
+                //change image
+
+                function changeImg() {
+                    document.slide.src = images[i]
+                    if (i < images.length - 1) {
+                        i++;
+                    } else {
+                        i = 0;
+                    }
+
+                    setTimeout("changeImg()", time);
+                }
+
+                window.onload = changeImg;
+            </script>
+            <img name="slide" width="400" height="200" alt="soap">
+
+
+            <br>
+
+            <div class="rectangle left">
+                <p>this is a rectangle inline block</p>
+            </div>
+            <div class="rectangle center">
+                <p>i am also a rectangle inline block</p>
+            </div>
+            <div class="rectangle right">
+                <p>you guessed it me too</p>
+            </div>
+
+
+            <p>
+                Here at Pysched skins, were all about finding the right scent that fits you. All you of our soaps our handmade with natural ingredients. We hope you enjoy your soap!
+            </p>
+        </section>
+
+        <h3> Heres all the different things you can buy:</h3>
+
+
+        <ol>
+            <li>fifty-two thirty</li>
+            <li> orange cream soda</li>
+            <li> bee wax</li>
+            <li> how about some weed candles lololol</li>
+        </ol>
+        <br>
+        <form>
+            <section class="soap">
+                <span>What smells do you like</span>
+                <br>
+                <input type="checkbox" name="smells" id="soap" value="soap">
+                <label for="soap">old man smell</label>
+                <input type="checkbox" name="smells" id="oragnesoap" value="soap">
+                <label for="oragnesoap">orange cream soda</label>
+            </section>
+        </form>
+
+        <div>
+            <footer class="main-footer">
+                <div class="container main-footer-container">
+                    <h3 class="website-name">Pysched Skins</h3>
+                    <ul class="nav footer-nav">
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCBk0-ypZMrJXBRMJVnwrV1w" target="_blank" rel="noopener noreferrer">
+                                <img src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Symbol.png" alt="youtubeimage">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="woodallsophia2279@gmail.com" target="_blank" alt="gmail-img" aria-label="gmail stuff">
+                                <img src="https://images.idgesg.net/images/article/2018/05/gmail_logo-100758589-large.jpg" alt="gmailimage">
+                            </a>
+                        </li>
+
+                    </ul>
+            </footer>
+
+</body>
+
+</html>
